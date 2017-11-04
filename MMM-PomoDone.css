@@ -1,0 +1,116 @@
+.MMM-MyCommute .row {
+  position: relative;
+  padding: 1px;
+  border-bottom: solid 1px #222;
+  min-height: 35px;
+  min-width: 300px;
+}
+
+.MMM-MyCommute .transit-mode {
+  width: 24px;
+  text-align: center;
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  display: block;
+}
+
+.MMM-MyCommute .transit-mode .transit-mode-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.MMM-MyCommute .destination-label {
+  display: block;
+  margin-left: 30px;
+  margin-right: 60px;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.MMM-MyCommute .row.with-multiple-routes .destination-label {
+  margin-right: 0px;
+}
+
+.MMM-MyCommute .travel-time,
+.MMM-MyCommute .loading-icon,
+.MMM-MyCommute .route-error {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  white-space: nowrap;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  line-height: 18px;
+  margin-top: 4px;
+}
+
+.MMM-MyCommute .route-error {
+  color: #be0e0e;
+}
+
+
+.MMM-MyCommute .travel-time.status-good {  
+  color: #a3ea80;
+}
+.MMM-MyCommute .travel-time.status-moderate {  
+  color: #f8dd70;
+}
+.MMM-MyCommute .travel-time.status-poor {  
+  color: #ff5a44;
+}
+
+
+.MMM-MyCommute .route-summary {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 18px;
+  margin-bottom: 6px;
+  margin-left: 30px;
+  /*text-transform: uppercase;*/
+}
+
+.MMM-MyCommute .route-summary-outer {
+  position: relative;  
+}
+
+.MMM-MyCommute .route-summary-outer .route-summary {
+  margin-right: 60px;
+}
+
+.MMM-MyCommute .route-summary-outer .travel-time {
+  top: 0px;
+  margin-top: 0px;
+}
+
+.MMM-MyCommute .route-summary .transit-leg {
+  white-space: nowrap;
+  margin-right: 12px;
+}
+
+.MMM-MyCommute .route-summary .transit-leg .transit-arrival-time {
+  text-transform: lowercase;
+}
+
+.MMM-MyCommute .route-summary .transit-leg svg {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: baseline;
+  margin-bottom: -2px;
+  margin-right: 2px;  
+}
