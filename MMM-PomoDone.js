@@ -4,7 +4,7 @@
 Module.register('MMM-PomoDone', {
   defaults: {
     url: 'https://pomodone-magicmirror.glitch.me/timer/status',
-    pollFrequency: 1000 * 5,
+    pollFrequency: 1000 * 1,
   },
   getStyles: function () {
     return ["MMM-PomoDone.css"];
@@ -29,8 +29,8 @@ Module.register('MMM-PomoDone', {
       this.isHidden = true;
     }
   },
-
   getDom: function() {
+    console.log('getDom', this.status);
     var wrapper = document.createElement("div");
 
     if (this.loading) {
@@ -46,7 +46,7 @@ Module.register('MMM-PomoDone', {
 
     var heading = document.createElement("span");
     heading.className = "destination-label bright";
-    heading.innerHTML = 'This is a Test';
+    heading.innerHTML = `${this.status.minutes}:${this.status.seconds}`;
 
     var summary = document.createElement("div");
     summary.classList.add("route-summary");
@@ -60,6 +60,7 @@ Module.register('MMM-PomoDone', {
   },
   socketNotificationReceived: function(notification, payload) {
     if (notification === 'POMODONE_STATUS_RESPONSE' + this.identifier) {
+      console.log('responseReceived', payload);
       this.status = payload;
       if (this.loading) {
         this.loading = false;

@@ -25,9 +25,10 @@ module.exports = NodeHelper.create({
           status.error = true;
         } else {
           console.log("MMM-PomoDone status data: ", data);
+          status = data;
         }
       } else {
-        console.log( "Error getting timer status: ", response);
+        console.log( "Error getting PomoDone timer status: ", response);
         status.error = true;
       }
 
