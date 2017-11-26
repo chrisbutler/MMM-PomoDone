@@ -1,0 +1,437 @@
+.ticker {
+  width: 100%;
+  transform: scale(-1, 1);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke-width: 85%;
+  border-radius: 100%;
+  stroke-dasharray: 0% 360%;
+  z-index: 1;
+}
+
+.time-timer {
+  width: 180px;
+  height: 180px;
+  background: #cd2a2e;
+  background: #cd2a2e;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.time-timer div {
+  position: absolute;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+.time-timer::before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  padding-bottom: 30px;
+  background-color: darkred;
+  border-radius: 50%;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+}
+
+.time-timer::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  padding-bottom: 12px;
+  background-color: white;
+  border-radius: 50%;
+  top: calc(50% - 6px);
+  left: calc(50% - 6px);
+}
+
+.time-timer .ticks span {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 12px;
+  background: #cd2a2e;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  left: calc(50% - 6px);
+  top: 50%;
+  z-index: 1;
+}
+
+.time-timer .ticks .tick-1 {
+  -webkit-transform: rotate(6deg) translateX(72px);
+  -ms-transform: rotate(6deg) translateX(72px);
+  transform: rotate(6deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-2 {
+  -webkit-transform: rotate(12deg) translateX(72px);
+  -ms-transform: rotate(12deg) translateX(72px);
+  transform: rotate(12deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-3 {
+  -webkit-transform: rotate(18deg) translateX(72px);
+  -ms-transform: rotate(18deg) translateX(72px);
+  transform: rotate(18deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-4 {
+  -webkit-transform: rotate(24deg) translateX(72px);
+  -ms-transform: rotate(24deg) translateX(72px);
+  transform: rotate(24deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-5 {
+  -webkit-transform: rotate(30deg) translateX(72px);
+  -ms-transform: rotate(30deg) translateX(72px);
+  transform: rotate(30deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-6 {
+  -webkit-transform: rotate(36deg) translateX(72px);
+  -ms-transform: rotate(36deg) translateX(72px);
+  transform: rotate(36deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-7 {
+  -webkit-transform: rotate(42deg) translateX(72px);
+  -ms-transform: rotate(42deg) translateX(72px);
+  transform: rotate(42deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-8 {
+  -webkit-transform: rotate(48deg) translateX(72px);
+  -ms-transform: rotate(48deg) translateX(72px);
+  transform: rotate(48deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-9 {
+  -webkit-transform: rotate(54deg) translateX(72px);
+  -ms-transform: rotate(54deg) translateX(72px);
+  transform: rotate(54deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-10 {
+  -webkit-transform: rotate(60deg) translateX(72px);
+  -ms-transform: rotate(60deg) translateX(72px);
+  transform: rotate(60deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-11 {
+  -webkit-transform: rotate(66deg) translateX(72px);
+  -ms-transform: rotate(66deg) translateX(72px);
+  transform: rotate(66deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-12 {
+  -webkit-transform: rotate(72deg) translateX(72px);
+  -ms-transform: rotate(72deg) translateX(72px);
+  transform: rotate(72deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-13 {
+  -webkit-transform: rotate(78deg) translateX(72px);
+  -ms-transform: rotate(78deg) translateX(72px);
+  transform: rotate(78deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-14 {
+  -webkit-transform: rotate(84deg) translateX(72px);
+  -ms-transform: rotate(84deg) translateX(72px);
+  transform: rotate(84deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-15 {
+  -webkit-transform: rotate(90deg) translateX(72px);
+  -ms-transform: rotate(90deg) translateX(72px);
+  transform: rotate(90deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-16 {
+  -webkit-transform: rotate(96deg) translateX(72px);
+  -ms-transform: rotate(96deg) translateX(72px);
+  transform: rotate(96deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-17 {
+  -webkit-transform: rotate(102deg) translateX(72px);
+  -ms-transform: rotate(102deg) translateX(72px);
+  transform: rotate(102deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-18 {
+  -webkit-transform: rotate(108deg) translateX(72px);
+  -ms-transform: rotate(108deg) translateX(72px);
+  transform: rotate(108deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-19 {
+  -webkit-transform: rotate(114deg) translateX(72px);
+  -ms-transform: rotate(114deg) translateX(72px);
+  transform: rotate(114deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-20 {
+  -webkit-transform: rotate(120deg) translateX(72px);
+  -ms-transform: rotate(120deg) translateX(72px);
+  transform: rotate(120deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-21 {
+  -webkit-transform: rotate(126.0deg) translateX(72px);
+  -ms-transform: rotate(126.0deg) translateX(72px);
+  transform: rotate(126.0deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-22 {
+  -webkit-transform: rotate(132deg) translateX(72px);
+  -ms-transform: rotate(132deg) translateX(72px);
+  transform: rotate(132deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-23 {
+  -webkit-transform: rotate(138deg) translateX(72px);
+  -ms-transform: rotate(138deg) translateX(72px);
+  transform: rotate(138deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-24 {
+  -webkit-transform: rotate(144deg) translateX(72px);
+  -ms-transform: rotate(144deg) translateX(72px);
+  transform: rotate(144deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-25 {
+  -webkit-transform: rotate(150deg) translateX(72px);
+  -ms-transform: rotate(150deg) translateX(72px);
+  transform: rotate(150deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-26 {
+  -webkit-transform: rotate(156deg) translateX(72px);
+  -ms-transform: rotate(156deg) translateX(72px);
+  transform: rotate(156deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-27 {
+  -webkit-transform: rotate(162deg) translateX(72px);
+  -ms-transform: rotate(162deg) translateX(72px);
+  transform: rotate(162deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-28 {
+  -webkit-transform: rotate(168deg) translateX(72px);
+  -ms-transform: rotate(168deg) translateX(72px);
+  transform: rotate(168deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-29 {
+  -webkit-transform: rotate(174deg) translateX(72px);
+  -ms-transform: rotate(174deg) translateX(72px);
+  transform: rotate(174deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-30 {
+  -webkit-transform: rotate(180deg) translateX(72px);
+  -ms-transform: rotate(180deg) translateX(72px);
+  transform: rotate(180deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-31 {
+  -webkit-transform: rotate(186.0deg) translateX(72px);
+  -ms-transform: rotate(186.0deg) translateX(72px);
+  transform: rotate(186.0deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-32 {
+  -webkit-transform: rotate(192deg) translateX(72px);
+  -ms-transform: rotate(192deg) translateX(72px);
+  transform: rotate(192deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-33 {
+  -webkit-transform: rotate(198.0deg) translateX(72px);
+  -ms-transform: rotate(198.0deg) translateX(72px);
+  transform: rotate(198.0deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-34 {
+  -webkit-transform: rotate(204deg) translateX(72px);
+  -ms-transform: rotate(204deg) translateX(72px);
+  transform: rotate(204deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-35 {
+  -webkit-transform: rotate(210deg) translateX(72px);
+  -ms-transform: rotate(210deg) translateX(72px);
+  transform: rotate(210deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-36 {
+  -webkit-transform: rotate(216deg) translateX(72px);
+  -ms-transform: rotate(216deg) translateX(72px);
+  transform: rotate(216deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-37 {
+  -webkit-transform: rotate(222deg) translateX(72px);
+  -ms-transform: rotate(222deg) translateX(72px);
+  transform: rotate(222deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-38 {
+  -webkit-transform: rotate(228deg) translateX(72px);
+  -ms-transform: rotate(228deg) translateX(72px);
+  transform: rotate(228deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-39 {
+  -webkit-transform: rotate(234deg) translateX(72px);
+  -ms-transform: rotate(234deg) translateX(72px);
+  transform: rotate(234deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-40 {
+  -webkit-transform: rotate(240deg) translateX(72px);
+  -ms-transform: rotate(240deg) translateX(72px);
+  transform: rotate(240deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-41 {
+  -webkit-transform: rotate(246deg) translateX(72px);
+  -ms-transform: rotate(246deg) translateX(72px);
+  transform: rotate(246deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-42 {
+  -webkit-transform: rotate(252.0deg) translateX(72px);
+  -ms-transform: rotate(252.0deg) translateX(72px);
+  transform: rotate(252.0deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-43 {
+  -webkit-transform: rotate(258deg) translateX(72px);
+  -ms-transform: rotate(258deg) translateX(72px);
+  transform: rotate(258deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-44 {
+  -webkit-transform: rotate(264deg) translateX(72px);
+  -ms-transform: rotate(264deg) translateX(72px);
+  transform: rotate(264deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-45 {
+  -webkit-transform: rotate(270deg) translateX(72px);
+  -ms-transform: rotate(270deg) translateX(72px);
+  transform: rotate(270deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-46 {
+  -webkit-transform: rotate(276deg) translateX(72px);
+  -ms-transform: rotate(276deg) translateX(72px);
+  transform: rotate(276deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-47 {
+  -webkit-transform: rotate(282deg) translateX(72px);
+  -ms-transform: rotate(282deg) translateX(72px);
+  transform: rotate(282deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-48 {
+  -webkit-transform: rotate(288deg) translateX(72px);
+  -ms-transform: rotate(288deg) translateX(72px);
+  transform: rotate(288deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-49 {
+  -webkit-transform: rotate(294deg) translateX(72px);
+  -ms-transform: rotate(294deg) translateX(72px);
+  transform: rotate(294deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-50 {
+  -webkit-transform: rotate(300deg) translateX(72px);
+  -ms-transform: rotate(300deg) translateX(72px);
+  transform: rotate(300deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-51 {
+  -webkit-transform: rotate(306deg) translateX(72px);
+  -ms-transform: rotate(306deg) translateX(72px);
+  transform: rotate(306deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-52 {
+  -webkit-transform: rotate(312deg) translateX(72px);
+  -ms-transform: rotate(312deg) translateX(72px);
+  transform: rotate(312deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-53 {
+  -webkit-transform: rotate(318deg) translateX(72px);
+  -ms-transform: rotate(318deg) translateX(72px);
+  transform: rotate(318deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-54 {
+  -webkit-transform: rotate(324deg) translateX(72px);
+  -ms-transform: rotate(324deg) translateX(72px);
+  transform: rotate(324deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-55 {
+  -webkit-transform: rotate(330deg) translateX(72px);
+  -ms-transform: rotate(330deg) translateX(72px);
+  transform: rotate(330deg) translateX(72px);
+  background: white;
+}
+
+.time-timer .ticks .tick-56 {
+  -webkit-transform: rotate(336deg) translateX(72px);
+  -ms-transform: rotate(336deg) translateX(72px);
+  transform: rotate(336deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-57 {
+  -webkit-transform: rotate(342deg) translateX(72px);
+  -ms-transform: rotate(342deg) translateX(72px);
+  transform: rotate(342deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-58 {
+  -webkit-transform: rotate(348deg) translateX(72px);
+  -ms-transform: rotate(348deg) translateX(72px);
+  transform: rotate(348deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-59 {
+  -webkit-transform: rotate(354deg) translateX(72px);
+  -ms-transform: rotate(354deg) translateX(72px);
+  transform: rotate(354deg) translateX(72px);
+}
+
+.time-timer .ticks .tick-60 {
+  -webkit-transform: rotate(360deg) translateX(72px);
+  -ms-transform: rotate(360deg) translateX(72px);
+  transform: rotate(360deg) translateX(72px);
+  background: white;
+}
